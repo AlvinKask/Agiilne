@@ -58,5 +58,28 @@ v14.15.4
 u-453@T238-06 MINGW64 ~/kta22elearnscraping (main)
 $ winget install openjs.nodejs
 ```
-
  
+### Loob failipaketi ja hakkab hoiustama seal packageid
+```
+u-453@T238-06 MINGW64 ~/kta22elearnscraping (main)
+$ npm init -y
+```
+### Visual studio dode'is
+- new file ".gitignore"
+- sisse kirjutada "node_modules"
+- https://github.com/axios/axios
+```
+u-453@T238-06 MINGW64 ~/kta22elearnscraping (main)
+$ npm i axios
+```
+ 
+- new file "main.js"
+- package.json -> "type": "module",
+ 
+```
+import axios from "axios";
+
+axios.get('https://api.chucknorris.io/jokes/random').then(response=> {
+    console.log(response.data);
+});
+```
