@@ -9,6 +9,7 @@
  - winget install github.cli (--source winget)
  
  ## *Peale seda töötab käsklus "gh"*
+### Loo connection githubi ja arvuti vahel
 ```
 gh auth login
 ? What account do you want to log into? GitHub.com
@@ -22,6 +23,24 @@ Press Enter to open github.com in your browser...
 - gh config set -h github.com git_protocol https
 ✓ Configured git protocol
 ✓ Logged in as AlvinKask
+```
+### Loo uus repo
+```
+gh repo create
+? What would you like to do? Create a new repository on GitHub from scratch
+? Repository name kta22elearnscraping
+
+? Repository name kta22elearnscraping
+? Description
+? Visibility Public
+? Would you like to add a README file? Yes
+? Would you like to add a .gitignore? No
+? Would you like to add a license? Yes
+? Choose a license The Unlicense
+? This will create "kta22elearnscraping" as a public repository on GitHub. Continue? Yes
+✓ Created repository AlvinKask/kta22elearnscraping on GitHub
+? Clone the new repository locally? Yes
+Cloning into 'kta22elearnscraping'...
 ```
 
  
