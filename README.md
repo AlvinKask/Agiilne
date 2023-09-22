@@ -93,11 +93,33 @@ npm i cheerio
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 
-axios.get('https://xkcd.com/').then(response=> {
+axios.get('https://xkcd.com/2831/').then(response=> {
     const $ = cheerio.load(response.data);
     let img = $('#comic>img')
     console.log(img.attr('title'));
     console.log(img.attr('alt'));
     console.log(img.attr('src'));
 });
+```
+- Kirjuta reminali "node main.js"
+ 
+### Alternatiiv
+```
+let response = await axios.get('https://xkcd.com/2831/');
+const $ = cheerio.load(response.data);
+let img = $('#comic>img')
+console.log(img.attr('title'));
+console.log(img.attr('alt'));
+console.log(img.attr('src'));
+```
+### Kuva 10 esimest koomuskit
+```
+for(let i = 1; i<10; i++){
+    let response = await axios.get('https://xkcd.com/' + i);
+    const $ = cheerio.load(response.data);
+    let img = $('#comic>img')
+    console.log(img.attr('title'));
+    console.log(img.attr('alt'));
+    console.log(img.attr('src'));
+}
 ```
