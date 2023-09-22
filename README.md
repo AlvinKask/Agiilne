@@ -42,5 +42,21 @@ gh repo create
 ? Clone the new repository locally? Yes
 Cloning into 'kta22elearnscraping'...
 ```
+ 
+### Ava visual studio code ja uuenda asjad
+``` 
+u-453@T238-06 MINGW64 ~
+$ cd kta22elearnscraping/
+
+u-453@T238-06 MINGW64 ~/kta22elearnscraping (main)
+$ code .
+
+u-453@T238-06 MINGW64 ~/kta22elearnscraping (main)
+$ node -v
+v14.15.4
+
+u-453@T238-06 MINGW64 ~/kta22elearnscraping (main)
+$ winget install openjs.nodejs
+```
 
  
